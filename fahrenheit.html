@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Konversi Suhu</title>
+    <script>
+        function celciusToFahrenheit(celsius) {
+            return (celsius * 9/5) + 32;
+        }
+
+        function konversiSuhu() {
+            var celsius = parseFloat(document.getElementById("inputSuhu").value);
+            var fahrenheit = celciusToFahrenheit(celsius);
+            document.getElementById("hasilKonversi").innerHTML = celsius + " Celsius = " + fahrenheit + " Fahrenheit";
+        }
+    </script>
+</head>
+<body>
+    <h2>Konversi Suhu Celcius ke Fahrenheit</h2>
+    <input type="text" id="inputSuhu" placeholder="Masukkan suhu dalam Celcius">
+    <button onclick="konversiSuhu()">Konversi</button>
+    <p id="hasilKonversi"></p>
+</body>
+</html>
