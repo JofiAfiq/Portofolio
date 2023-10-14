@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh If-Else JavaScript</title>
+</head>
+<body>
+    <label for="scoreInput">Masukkan nilai score: </label>
+    <input type="number" id="scoreInput">
+    <button onclick="prosesNilai()">Proses</button>
+    <!--<p id="hasil"></p>-->
+    <p>Hasil: <span id="hasil"></span></p>
+
+  <script>
+        function prosesNilai() {
+      var score = parseInt(document.getElementById("scoreInput").value);
+      //var hasilelement = document.getElementById("hasil");
+
+if (score === 100) {
+      document.write("A");
+
+    } else if (score >= 90) {
+      document.write("B");
+
+    } else if (score >= 80) {
+      document.write("C");
+
+    } else if (score >= 70) {
+      document.write("D");
+
+    } else {
+      document.write("E");
+    }
+}
+    </script>
+</body>
+</html>
